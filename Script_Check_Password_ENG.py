@@ -44,10 +44,10 @@ def main(args):
     for password in args:
         count = pwned_api_check(password)
         if count:
-            print(f'{password} foi encontrada {count} vezes... deves mudar a pass')
+            print(f'{password} it was found {count} times... you must change the pass')
         else:
-            print(f'{password} não foi encontrada. Siga :D !')
-    return '\nFeito Boss....'
+            print(f'{password} not found.  :D !')
+    return '\nDone Boss....'
 
 if __name__ == '__main__':
     sys.exit(main(sys.argv[1:]))
